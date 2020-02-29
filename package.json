@@ -1,0 +1,13 @@
+{
+  "name": "@hatchly/snippets-nuxt-module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "peerDependencies": {
+    "@nuxtjs/axios": "^5.9.5",
+    "axios": "^0.19.2",
+    "consola": "^2.11.3",
+    "lodash": "^4.17.15",
+    "nuxt": "^2.11.0"
+  }
+}
