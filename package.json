@@ -1,13 +1,23 @@
 {
-  "name": "@hatchly/nuxt-snippets-module",
-  "version": "1.0.0",
-  "main": "./lib/index.js",
-  "license": "MIT",
-  "peerDependencies": {
-    "@nuxtjs/axios": "^5.9.5",
-    "axios": "^0.19.2",
-    "consola": "^2.11.3",
-    "lodash": "^4.17.15",
-    "nuxt": "^2.11.0"
-  }
+    "name": "@hatchly/nuxt-snippets-module",
+    "description": "Official nuxt integration for the Hatchly/Snippets module",
+    "version": "1.0.0",
+    "main": "./lib/index.js",
+    "license": "MIT",
+    "repository": {
+        "url": "https://github.com/netsells/nuxt-hatchly-snippets"
+    },
+    "author": {
+        "name": "Sam Turrell",
+        "url": "https://samturrell.co.uk",
+        "email": "sam.turrell@netsells.co.uk"
+    },
+    "homepage": "https://github.com/netsells/nuxt-hatchly-snippets",
+    "peerDependencies": {
+        "@nuxtjs/axios": "^5.9.5",
+        "axios": "^0.19.2",
+        "consola": "^2.11.3",
+        "lodash": "^4.17.15",
+        "nuxt": "^2.11.0"
+    }
 }
