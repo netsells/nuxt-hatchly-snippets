@@ -29,6 +29,6 @@
         "install-peers": "install-peers"
     },
     "files": [
-        "./lib/"
+        "lib/**/*"
     ]
 }
