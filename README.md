@@ -69,4 +69,13 @@ Each option is described below.
 - Default: `${ process.env.API_BASE }/_hatchly/api/snippets`
 - Type: `string`
 
+## Usage
+
+All snippets are downloaded server side on page load.
+
+To access a snippet you can use the global `$snippet()` method:
+
+```vue
+{{ $snippet('snippet_key') }}
+```
 
