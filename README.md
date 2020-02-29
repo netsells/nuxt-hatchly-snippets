@@ -36,6 +36,18 @@ API_BASE=http://my-application.localhost
 
 ## Options
 
+The options object can contain the following values: 
+
+```js
+{
+    apiBase: '',
+    apiPath: '',
+    apiUrl: '',
+},
+```
+
+Each option is described below.
+
 ### `apiBase`
 
 > The url of your Hatchly site. This is should be updated in your .env rather than hardcoding a value here.
