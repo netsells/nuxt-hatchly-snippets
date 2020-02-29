@@ -1,5 +1,5 @@
 {
-  "name": "@hatchly/snippets-nuxt-module",
+  "name": "@hatchly/nuxt-snippets-module",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
