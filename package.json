@@ -27,5 +27,8 @@
     },
     "scripts": {
         "install-peers": "install-peers"
-    }
+    },
+    "files": [
+        "./lib/"
+    ]
 }
