@@ -100,3 +100,17 @@ To access a snippet you can use the global `$snippet()` method:
 {{ $snippet('snippet_key') }}
 ```
 
+## Storybook
+
+This module exposes a storybook integration to add the `$snippet` global and the store module. Simply pull the following module into your project and register your snippets, in the `preview.js` file for example:
+
+```js
+import hatchlySnippets from '@hatchly/nuxt-snippets-module/storybook';
+import { snippets } from './fixtures/snippets';
+import store from './store';
+
+hatchlySnippets({
+    store,
+    snippets,
+});
+```
