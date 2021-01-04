@@ -1,7 +1,7 @@
 {
     "name": "@hatchly/nuxt-snippets-module",
     "description": "Official nuxt integration for the Hatchly/Snippets module",
-    "version": "3.5.1",
+    "version": "3.6.0",
     "main": "./lib/index.js",
     "license": "MIT",
     "repository": {
