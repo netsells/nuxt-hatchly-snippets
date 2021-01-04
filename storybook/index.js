@@ -1,4 +1,5 @@
-import { registerStoreModule, registerGlobalMixin } from '../lib/plugin';
+import Vue from 'vue';
+import { registerStoreModule, globalMixin } from '../lib/plugin';
 
 /**
  * Init the store and globals and setup the snippets fixture.
@@ -9,7 +10,8 @@ import { registerStoreModule, registerGlobalMixin } from '../lib/plugin';
  */
 export default ({ store, snippets }) => {
     registerStoreModule(store);
-    registerGlobalMixin();
+
+    Vue.prototype.$snippet = globalMixin;
 
     store.commit('snippets/set', snippets);
 };
