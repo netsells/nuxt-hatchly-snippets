@@ -1,5 +1,49 @@
 import Vue from 'vue';
-import { registerStoreModule, globalMixin } from '../lib/plugin';
+import get from 'lodash/get';
+
+const registerStoreModule = (store) => {
+    store.registerModule('snippets', {
+        namespaced: true,
+
+        state: () => ({
+            snippets: [],
+            initialised: false,
+        }),
+
+        mutations: {
+            /**
+             * Set the data in the store.
+             *
+             * @param {object} state
+             * @param {Array} data
+             */
+            set(state, data) {
+                state.initialised = true;
+                state.snippets = data;
+            },
+        },
+
+        getters: {
+            /**
+             * Return a function to find snippet in the store by key.
+             *
+             * @param {object} state
+             * @param {Array} state.snippets
+             *
+             * @returns {function(*): *}
+             */
+            find({ snippets }) {
+                return (key) => snippets.find((snippet) => snippet.key === key);
+            },
+        },
+    });
+};
+
+export const globalMixin = function(key) {
+    const find = this.$store.getters['snippets/find'];
+
+    return get(find(key), 'value');
+};
 
 /**
  * Init the store and globals and setup the snippets fixture.
